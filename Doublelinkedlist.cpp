@@ -196,6 +196,19 @@ int main()
 
     do
     {
+       cout << "\nMenu:\n";
+       cout << "1. Add a record\n";
+       cout << "2. Delete record\n"; 
+       cout << "3. view Acsending\n";
+            cout << "4. view Descending\n";
+            cout << "5. Search record\n";
+            cout << "6. Exit\n";
+            cout << "Enter your choice: ";
+
+            cin >> choice;
+
+            
+            
         
     }
 }
