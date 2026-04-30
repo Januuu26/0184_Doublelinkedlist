@@ -45,4 +45,13 @@ public:
                 START->prev = newNode;
 
             newNode->prev = NULL;
+
+            START = newNode;
+            return;
+        }
+
+        Node *current = START;
+        while (current->next != NULL && current->next->noMhs < nim)
+        {
+            current = current->next;
         }
