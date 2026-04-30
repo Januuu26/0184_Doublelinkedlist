@@ -32,4 +32,17 @@ public:
 
         newNode->noMhs = nim;
 
-        
+        if (START == NULL || nim <= START->noMhs)
+        {
+            if (START != NULL && nim == START->noMhs)
+            {
+                cout << "\nDUPLICATE ROLL NUMBER NOT ALLOWED" << endl;
+                return;
+            }
+            newNode->next = START;
+
+            if (START != NULL)
+                START->prev = newNode;
+
+            newNode->prev = NULL;
+        }
