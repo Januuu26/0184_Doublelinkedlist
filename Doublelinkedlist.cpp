@@ -22,4 +22,14 @@ public:
         START = NULL;
     }
 
-    
+    void addNode()
+    {
+        int nim;
+        cout <<'\nEnter the rool number of the student: ';
+        cin >> nim;
+
+        Node *newNode = new Node();
+
+        newNode->noMhs = nim;
+
+        
